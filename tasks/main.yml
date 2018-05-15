@@ -16,6 +16,7 @@
     name: docker
     state: started
     enabled: yes
+  when: docker_startup_service_enabled
 
 - name: Ensure handlers are notified now to avoid firewall conflicts.
   meta: flush_handlers
