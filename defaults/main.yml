@@ -4,6 +4,7 @@ docker_edition: 'ce'
 docker_package: "docker-{{ docker_edition }}"
 docker_package_state: present
 docker_restart_on_package_change: True
+docker_startup_service_enabled: True
 
 # Docker Compose options.
 docker_install_compose: True
